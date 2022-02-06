@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.cometoegypt.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/BoxImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="116dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/egyptflag" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/state_name"
+            android:textSize="@dimen/heading_text_size" />
+
+        <LinearLayout style="@style/BoxLayoutHorizontal">
+
+            <LinearLayout
+                android:id="@+id/hotels"
+                style="@style/BoxLayoutVertical">
+
+                <ImageView
+                    style="@style/BoxImageView"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/ic_hotel_black_48dp" />
+
+                <TextView
+                    style="@style/BoxTextView"
+                    android:text="@string/hotels" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/location"
+                style="@style/BoxLayoutVertical">
+
+                <ImageView
+                    style="@style/BoxImageView"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/ic_place_black_48dp" />
+
+                <TextView
+                    style="@style/BoxTextView"
+                    android:text="@string/historical_places" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/BoxLayoutHorizontal">
+
+            <LinearLayout
+                android:id="@+id/hospitals"
+                style="@style/BoxLayoutVertical">
+
+                <ImageView
+                    style="@style/BoxImageView"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/ic_local_hospital_black_48dp" />
+
+                <TextView
+                    style="@style/BoxTextView"
+                    android:text="@string/hospitals" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/entertainment"
+                style="@style/BoxLayoutVertical">
+
+                <ImageView
+                    style="@style/BoxImageView"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/ic_movie_black_48dp" />
+
+                <TextView
+                    style="@style/BoxTextView"
+                    android:text="@string/entertainment" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
